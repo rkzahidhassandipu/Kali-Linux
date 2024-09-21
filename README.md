@@ -19,10 +19,10 @@
 16. **user type check** > <code>sudo -i</code>
 17. **normal user to move root user** > <code>sudo su</code>
 18. **if your back to normal user** > <code>su -username</code>
-19. **file permition check** > <code>ls -i</code>
-20. **file permition remove** > <code>chmod a-w file name</code>
-21. **file permition adding** > <code>chmod u-w file name</code>
-22. **execute** > <code>chmod u-x file name</code>
+19. **file permission check** > <code>ls -l</code>
+20. **file permission remove** > <code>chmod a-w file name</code>
+21. **file permission adding** > <code>chmod u+w file name</code>
+22. **execute** > <code>chmod u+x file name</code>
 23. **install python file** > <code>python filename.py</code>
 24. **any <code>deb</code> file install for** > <code>sudo dpkg -i filename</code>
 25. **sheel file install for go to folder** > <code>./filename.sh</code>
