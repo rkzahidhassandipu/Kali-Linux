@@ -42,3 +42,31 @@
 39. **website Ip address show** > <code>>host website link</code>
 40. **username show** > <code>hostname</code>
 41. **Change user name** > <code>sudo hostname -b newUserName</code>
+
+42. **<code>(.)</code>mining will search for files from the folder I'm working in** > <code>find . -name filename</code>
+
+43. **The selected folder will show files from that folder** > <code>find /home/kali -name filename</code>
+
+44. **<code>(/)</code> Mining will search for files from the Road folder** > <code>find / -name filename</code>
+
+45. **<code>(*)</code> Mining will show all the files with the file name I gave it** > <code>find /home/kali -name filename*</code>
+
+46. **<code>(*.txt) </code>Mining will show all txt file I gave it** > <code>find /home/kali -name *.txt</code>
+
+47. **<code>(.)</code> <code>(/home/kali)</code> Mining will search from within the two folders** > <code>find . /home/kali -name *.txt -type f</code>
+
+48. **(-perm) Mining will search Permition file ( / u = r ) u - user - file and r - read - file** > <code>find . /home/kali -type f -perm /u=r</code>
+
+49. **<code>(/u=x)</code> Mining execute file** > <code>find . /home/kali -type f -perm /u=x</code>
+
+50. **<code>(0 size)</code> Mining will search 0 size file** > <code>find /home/kali -type -type f -size 0</code>
+
+51. **search and delete** > <code>find /home/kali -type f -size 0 -exec rm/0 size</code>
+
+52. **it will search file and delete all file** > <code>find /home/kali -type f -name *.txt -exec rm/txt</code>
+
+53. **it will search file name related two type file show** > <code>find . -type f \(-name '*.log' -o -name '*.php' -o -name filename\)</code>
+
+54. **it will search all file show two type file** > <code>find . -type f \(-name '*.log' -o -name '*.php'\)</code>
+
+55. **** > <code>find . -type f \(-name '*.log' -o -name '*.php' -o -name filename \) -exec rm {}\;</code>
