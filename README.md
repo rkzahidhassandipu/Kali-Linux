@@ -13,7 +13,7 @@
 10. **text show one page go to next page _(Space button)_** > <code>less new.txt</code>
 11. **show first 10 line text** > <code>head new.txt</code>
 12. **show last 10 line text** > <code>tail new.txt</code>
-13. **if yout found any word in file** > <code>grep -w 'admin' new.txt</code>
+13. **if you found any word in file** > <code>grep -w 'admin' new.txt</code>
 14. **if your found line number and word** > <code>grep -n 'admin' new.txt</code>
 15. **open file and modify** > <code>nano new.txt</code>
 16. **user type check** > <code>sudo -i</code>
@@ -33,7 +33,7 @@
 30. **process running list check** > <code>ps</code>
 31. **command last if you adding <code>&</code> running** > <code>**Explen:-** sleep 10&</code> _Show running id number_
 32. **If you running file stop** > <code>kill</code>
-33. **frunning file check** > <code>fg</code>
+33. **running file check** > <code>fg</code>
 34. **packet send unlimited request** > <code>ping scanme.nmap.org</code>
 35. **running 4 packet request** > <code>pign scanme.nmap.org -c 4</code>
 36. **show ip address** > <code>ifconfig</code>
@@ -43,7 +43,7 @@
 40. **username show** > <code>hostname</code>
 41. **Change user name** > <code>sudo hostname -b newUserName</code>
 
-42. **<code>(.)</code>mining will search for files from the folder I'm working in** > <code>find . -name filename</code>
+42. **<code>(.)</code>mining will search for files from the folder I'm working in** > <code>find. -name filename</code>
 
 43. **The selected folder will show files from that folder** > <code>find /home/kali -name filename</code>
 
@@ -55,7 +55,7 @@
 
 47. **<code>(.)</code> <code>(/home/kali)</code> Mining will search from within the two folders** > <code>find . /home/kali -name *.txt -type f</code>
 
-48. **(-perm) Mining will search Permition file ( / u = r ) u - user - file and r - read - file** > <code>find . /home/kali -type f -perm /u=r</code>
+48. **(-perm) Mining will search Permition file ( / u = r ) u - user - file and r - read - file** > <code>find. /home/kali -type f -perm /u=r</code>
 
 49. **<code>(/u=x)</code> Mining execute file** > <code>find . /home/kali -type f -perm /u=x</code>
 
@@ -65,8 +65,10 @@
 
 52. **it will search file and delete all file** > <code>find /home/kali -type f -name *.txt -exec rm/txt</code>
 
-53. **it will search file name related two type file show** > <code>find . -type f \(-name '*.log' -o -name '*.php' -o -name filename\)</code>
+53. **It will search file names related to two types of file show** > <code>find. -type f \(-name '*.log' -o -name '*.php' -o -name filename\)</code>
 
 54. **it will search all file show two type file** > <code>find . -type f \(-name '*.log' -o -name '*.php'\)</code>
 
 55. **** > <code>find . -type f \(-name '*.log' -o -name '*.php' -o -name filename \) -exec rm {}\;</code>
+
+
