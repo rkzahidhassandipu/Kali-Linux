@@ -74,60 +74,60 @@
 ## Nmap
 ### Nmap Scan  very slowly but can show information very accurately
 
-**show details** > <code>nmap -p 1-10000</code>
+1. **show details** > <code>nmap -p 1-10000</code>
 
-**<code>T0 to 5</code> can be used but <code>T2, T3, T4</code> can show the best information because it can scan faster <code>T0</code> means it will scan very slowly and <code>T5</code> it is better not to use it because it can scan faster. Because of that many information can't show** > <code>nmap ip -p 1-1000 T0</code>
-**To scan a specific port** > <code>nmap -p 445 ip -v</code>
+2. **<code>T0 to 5</code> can be used but <code>T2, T3, T4</code> can show the best information because it can scan faster <code>T0</code> means it will scan very slowly and <code>T5</code> it is better not to use it because it can scan faster. Because of that many information can't show** > <code>nmap ip -p 1-1000 T0</code><br/>
+3. **To scan a specific port** <code>nmap -p 445 ip -v</code>
 
-**Checking with <code>-sV</code> will show what <code>Android, Mac, Windows, and Linux</code> he uses and what version they are.** > <code>nmap -p 445 ip -sV -v</code>
+4. **Checking with <code>-sV</code> will show what <code>Android, Mac, Windows, and Linux</code> he uses and what version they are.** > <code>nmap -p 445 ip -sV -v</code>
 
-**If you use <code>-A</code>, you can create many pressure and bring information** > <code>nmap -p ip -A -v </code>
+5. **If you use <code>-A</code>, you can create many pressure and bring information** > <code>nmap -p ip -A -v </code>
 
-**<code>-O</code>scans inside the signature and shows what my target is using <code>Android Mac Linux Windows</code> but sometimes the information can be wrong** > <code>sudo nmap -p 1-1000 -O -v</code>
+6. **<code>-O</code>scans inside the signature and shows what my target is using <code>Android Mac Linux Windows</code> but sometimes the information can be wrong** > <code>sudo nmap -p 1-1000 -O -v</code>
 
-**script for dos attack ** > <code>ls /use/share/nmap/scripts | grep dos</code>
+7. **script for dos attack ** > <code>ls /use/share/nmap/scripts | grep dos</code>
 
-**any file found for ** > <code>ls /use/share/nmap/scripts | grep sh</code>
+8. **any file found for ** > <code>ls /use/share/nmap/scripts | grep sh</code>
 
 
-## Rustscan
+# Rustscan
 ### rustscan tool can scan very fast but sometimes does not show information properly due to scanning distance
-**help for** > <code>rustscan -h</code>
-**scan for ** > <code>rustscan -a ip -r 1-10000</code>
+1. **help for** > <code>rustscan -h</code>
+2. **scan for ** > <code>rustscan -a ip -r 1-10000</code>
 
 
-## Nbtscan
-**one ip scan ** > <code>nbtscan ip</code>
-**lot ip scan ** > <code>nbtscan -f filename</code>
+# Nbtscan
+1. **one ip scan** > <code>nbtscan ip</code>
+2. **lot ip scan** > <code>nbtscan -f filename</code>
 
-##msfconsole 
-**If you want to do enumeration with ssh or something else** > <code>nmap -p 1-1000 </code> **all ssh file show**
-**exploit-module > <code>excellent, great and good</code> to be good because while hacking the system this code destroys the system module code or breaks the system code and adds these codes there.**
+# msfconsole 
+1. **If you want to do enumeration with ssh or something else** > <code>nmap -p 1-1000 </code> **all ssh file show**
+2. **exploit-module > <code>excellent, great, and good</code> to be good because while hacking the system this code destroys the system module code or breaks the system code and adds these codes there.**
 
-**search any type module** > <code>search ssh type: auxiliary</code>
+3. **search any type module** > <code>search ssh type: auxiliary</code>
 
-**if you any file select ** > <code>use 20 </code> **module number**
-**all details show** > <code>info</code>
-**rhost change for** > <code>set rhost ip</code>
-**check for** > <code>options</code>
-
-
-**rport change for** > <code>set rports port-number</code>
-**threads change ** > <code>set threads 50</code> **Using this will allow the device to use CPU and send more packets and work faster**
-
-**module run for** > <code>run</code> 
-**back for** > <code>back</code>
-
-**website or computer** > <code>ssh name@ip</code>
-**Will show weakness** > <code>ssh-audit ip</code>
-**Allows control of any device** > <code>ssh-remote</code>
-**show details** > <code>search ftp type:</code><code>sudo cat /etc/resolv.conf</code><code>sudo cat /etc/hosts</code>
+4. **if you any file select** > <code>use 20 </code> **module number**
+5. **all details show** > <code>info</code>
+6. **rhost change for** > <code>set rhost ip</code>
+7. **check for** > <code>options</code>
 
 
+8. **rport change for** > <code>set rports port-number</code>
+9. **threads change** > <code>set threads 50</code> **Using this will allow the device to use CPU and send more packets and work faster**
 
-## dnsrecon 
+10. **module run for** > <code>run</code> 
+11. **back for** > <code>back</code>
 
-**If dnsrecon is public it will try to pull it** > <code>dnsrecon -d xyz.com/ip</code>
-**This will copy and show all records in this domain** > <code>dnsrecon -d xyz.com/ip -t axfr</code>
+12. **website or computer** > <code>ssh name@ip</code>
+13. **Will show weakness** > <code>ssh-audit ip</code>
+14. **Allows control of any device** > <code>ssh-remote</code>
+15. **show details** > <code>search ftp type:</code><code>sudo cat /etc/resolv.conf</code><code>sudo cat /etc/hosts</code>
+
+
+
+# dnsrecon 
+
+1. **If dnsrecon is public it will try to pull it** > <code>dnsrecon -d xyz.com/ip</code>
+2. **This will copy and show all records in this domain** <code>dnsrecon -d xyz.com/ip -t axfr</code>
 
 
